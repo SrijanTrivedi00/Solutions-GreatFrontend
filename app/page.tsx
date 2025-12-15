@@ -29,7 +29,7 @@ const Home = () => {
         >
           📂 Open Accordion App
         </button>
-         <button
+        <button
           onClick={() => router.push("/Contact_form")}
           className="px-6 py-3 rounded-lg bg-red-600 text-white font-medium 
                      hover:bg-green-600 transition duration-300 
