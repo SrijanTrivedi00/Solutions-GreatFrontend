@@ -1,5 +1,5 @@
 "use client";
-import { Form } from "lucide-react";
+import { ActivitySquare, CalculatorIcon, Form, GalleryVertical } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 const Home = () => {
@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 px-4">
-      <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
+      <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center cursor-pointer">
         Your Small Apps Dashboard
       </h1>
 
@@ -16,7 +16,7 @@ const Home = () => {
           onClick={() => router.push("/Weather-app")}
           className="px-6 py-3 rounded-lg bg-red-600 text-white font-medium 
                      hover:bg-green-600 transition duration-300 
-                     shadow-md hover:shadow-lg focus:outline-none"
+                     shadow-md hover:shadow-lg focus:outline-none cursor-pointer"
         >
           🌦 Open Weather App
         </button>
@@ -25,7 +25,7 @@ const Home = () => {
           onClick={() => router.push("/Accordian")}
           className="px-6 py-3 rounded-lg bg-red-600 text-white font-medium 
                      hover:bg-green-600 transition duration-300 
-                     shadow-md hover:shadow-lg focus:outline-none"
+                     shadow-md hover:shadow-lg focus:outline-none cursor-pointer"
         >
           📂 Open Accordion App
         </button>
@@ -33,9 +33,35 @@ const Home = () => {
           onClick={() => router.push("/Contact_form")}
           className="px-6 py-3 rounded-lg bg-red-600 text-white font-medium 
                      hover:bg-green-600 transition duration-300 
-                     shadow-md hover:shadow-lg focus:outline-none flex"
+                     shadow-md hover:shadow-lg focus:outline-none flex gap-2 cursor-pointer"
         >
           <Form></Form> Open Contact form
+        </button>
+        <button
+          onClick={() => router.push("/Holy-grail")}
+          className="px-6 py-3 rounded-lg bg-red-600 text-white font-medium 
+                     hover:bg-green-600 transition duration-300 
+                     shadow-md hover:shadow-lg focus:outline-none flex gap-2 cursor-pointer "
+        >
+          <GalleryVertical/> Open Holy-Grail
+          
+        </button>
+         <button
+          onClick={() => router.push("/progress-bar")}
+          className="px-6 py-3 rounded-lg bg-red-600 text-white font-medium 
+                     hover:bg-green-600 transition duration-300 
+                     shadow-md hover:shadow-lg focus:outline-none flex gap-2 cursor-pointer "
+        >
+          <ActivitySquare /> Open Progressbar
+          
+        </button>  <button
+          onClick={() => router.push("/mortage-calculator")}
+          className="px-6 py-3 rounded-lg bg-red-600 text-white font-medium 
+                     hover:bg-green-600 transition duration-300 
+                     shadow-md hover:shadow-lg focus:outline-none flex gap-2 cursor-pointer "
+        >
+          <CalculatorIcon /> Open Mortage Calculator
+          
         </button>
       </div>
     </div>
