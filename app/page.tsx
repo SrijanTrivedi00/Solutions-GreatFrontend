@@ -1,5 +1,11 @@
 "use client";
-import { ActivitySquare, CalculatorIcon, Form, GalleryVertical } from "lucide-react";
+import {
+  ActivitySquare,
+  CalculatorIcon,
+  Form,
+  GalleryVertical,
+  WatchIcon,
+} from "lucide-react";
 import { useRouter } from "next/navigation";
 
 const Home = () => {
@@ -20,7 +26,6 @@ const Home = () => {
         >
           🌦 Open Weather App
         </button>
-
         <button
           onClick={() => router.push("/Accordian")}
           className="px-6 py-3 rounded-lg bg-red-600 text-white font-medium 
@@ -43,25 +48,31 @@ const Home = () => {
                      hover:bg-green-600 transition duration-300 
                      shadow-md hover:shadow-lg focus:outline-none flex gap-2 cursor-pointer "
         >
-          <GalleryVertical/> Open Holy-Grail
-          
+          <GalleryVertical /> Open Holy-Grail
         </button>
-         <button
+        <button
           onClick={() => router.push("/progress-bar")}
           className="px-6 py-3 rounded-lg bg-red-600 text-white font-medium 
                      hover:bg-green-600 transition duration-300 
                      shadow-md hover:shadow-lg focus:outline-none flex gap-2 cursor-pointer "
         >
           <ActivitySquare /> Open Progressbar
-          
-        </button>  <button
+        </button>{" "}
+        <button
           onClick={() => router.push("/mortage-calculator")}
           className="px-6 py-3 rounded-lg bg-red-600 text-white font-medium 
                      hover:bg-green-600 transition duration-300 
                      shadow-md hover:shadow-lg focus:outline-none flex gap-2 cursor-pointer "
         >
           <CalculatorIcon /> Open Mortage Calculator
-          
+        </button>
+         <button
+          onClick={() => router.push("/stopwatch")}
+          className="px-6 py-3 rounded-lg bg-red-600 text-white font-medium 
+                     hover:bg-green-600 transition duration-300 
+                     shadow-md hover:shadow-lg focus:outline-none flex gap-2 cursor-pointer "
+        >
+          <WatchIcon /> Use stopWatch
         </button>
       </div>
     </div>

@@ -36,7 +36,7 @@ const Mortagecalc = () => {
           ))}
         </div>
       </div>
-      <div className="h-[1px] bg-gray-700 w-full mt-5"></div>
+      <div className="h-px bg-gray-700 w-full mt-5"></div>
 
       <div>
         <h3 className="text-black text-2xl">Calculator</h3>
