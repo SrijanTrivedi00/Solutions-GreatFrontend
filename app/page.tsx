@@ -4,6 +4,7 @@ import {
   CalculatorIcon,
   Form,
   GalleryVertical,
+  ImagePlayIcon,
   WatchIcon,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
@@ -66,13 +67,21 @@ const Home = () => {
         >
           <CalculatorIcon /> Open Mortage Calculator
         </button>
-         <button
+        <button
           onClick={() => router.push("/stopwatch")}
           className="px-6 py-3 rounded-lg bg-red-600 text-white font-medium 
                      hover:bg-green-600 transition duration-300 
                      shadow-md hover:shadow-lg focus:outline-none flex gap-2 cursor-pointer "
         >
           <WatchIcon /> Use stopWatch
+        </button>
+        <button
+          onClick={() => router.push("/image-carousel")}
+          className="px-6 py-3 rounded-lg bg-red-600 text-white font-medium 
+                     hover:bg-green-600 transition duration-300 
+                     shadow-md hover:shadow-lg focus:outline-none flex gap-2 cursor-pointer "
+        >
+          <ImagePlayIcon /> Use Carousel
         </button>
       </div>
     </div>
