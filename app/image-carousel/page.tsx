@@ -35,7 +35,7 @@ const ImageCarousel = () => {
   return (
     <div className="flex items-center justify-center h-screen">
       {currentImage > 0 && (
-        <div onClick={() => setCurrentImage((prev) => prev - 1)}>
+        <div onClick={() => setCurrentImage((prev) => prev - 1)} className="cursor-pointer">
           <ArrowLeft />
         </div>
       )}
@@ -46,7 +46,7 @@ const ImageCarousel = () => {
         className="w-[600px] h-[400px] object-contain mx-2"
       />
       {currentImage < images.length - 1 && (
-        <div onClick={() => setCurrentImage((prev) => prev + 1)}>
+        <div onClick={() => setCurrentImage((prev) => prev + 1)} className="cursor-pointer">
           <ArrowRight />
         </div>
       )}
