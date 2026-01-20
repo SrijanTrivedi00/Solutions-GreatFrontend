@@ -5,7 +5,9 @@ import {
   Form,
   GalleryVertical,
   ImagePlayIcon,
+  MoveDiagonal2Icon,
   ScrollIcon,
+  TableOfContents,
   WatchIcon,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
@@ -91,6 +93,22 @@ const Home = () => {
                      shadow-md hover:shadow-lg focus:outline-none flex gap-2 cursor-pointer "
         >
           <ScrollIcon /> Infinite Scroll...
+        </button>
+        <button
+          onClick={() => router.push("/Tabs-switch")}
+          className="px-6 py-3 rounded-lg bg-red-600 text-white font-medium 
+                     hover:bg-green-600 transition duration-300 
+                     shadow-md hover:shadow-lg focus:outline-none flex gap-2 cursor-pointer "
+        >
+          <TableOfContents /> Check Tabs...
+        </button>
+         <button
+          onClick={() => router.push("/Modal")}
+          className="px-6 py-3 rounded-lg bg-red-600 text-white font-medium 
+                     hover:bg-green-600 transition duration-300 
+                     shadow-md hover:shadow-lg focus:outline-none flex gap-2 cursor-pointer "
+        >
+          <MoveDiagonal2Icon/> Modal
         </button>
       </div>
     </div>
