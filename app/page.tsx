@@ -8,6 +8,7 @@ import {
   MoveDiagonal2Icon,
   ScrollIcon,
   TableOfContents,
+  ThumbsUp,
   WatchIcon,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
@@ -21,7 +22,7 @@ const Home = () => {
         Your Small Apps Dashboard
       </h1>
 
-      <div className="flex flex-col sm:flex-row gap-4">
+      <div className="flex flex-wrap sm:flex-row gap-4">
         <button
           onClick={() => router.push("/Weather-app")}
           className="px-6 py-3 rounded-lg bg-red-600 text-white font-medium 
@@ -102,13 +103,21 @@ const Home = () => {
         >
           <TableOfContents /> Check Tabs...
         </button>
-         <button
+        <button
           onClick={() => router.push("/Modal")}
           className="px-6 py-3 rounded-lg bg-red-600 text-white font-medium 
                      hover:bg-green-600 transition duration-300 
                      shadow-md hover:shadow-lg focus:outline-none flex gap-2 cursor-pointer "
         >
-          <MoveDiagonal2Icon/> Modal
+          <MoveDiagonal2Icon /> Modal
+        </button>
+        <button
+          onClick={() => router.push("/Like-button")}
+          className="px-6 py-3 rounded-lg bg-red-600 text-white font-medium 
+                     hover:bg-green-600 transition duration-300 
+                     shadow-md hover:shadow-lg focus:outline-none flex gap-2 cursor-pointer "
+        >
+          <ThumbsUp /> Like Button
         </button>
       </div>
     </div>
