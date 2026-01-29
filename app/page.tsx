@@ -7,6 +7,7 @@ import {
   ImagePlayIcon,
   MoveDiagonal2Icon,
   ScrollIcon,
+  Star,
   TableOfContents,
   ThumbsUp,
   WatchIcon,
@@ -119,6 +120,15 @@ const Home = () => {
         >
           <ThumbsUp /> Like Button
         </button>
+         <button
+          onClick={() => router.push("/Star-rating")}
+          className="px-6 py-3 rounded-lg bg-red-600 text-white font-medium 
+                     hover:bg-green-600 transition duration-300 
+                     shadow-md hover:shadow-lg focus:outline-none flex gap-2 cursor-pointer "
+        >
+          <Star /> Star Rating
+        </button>
+
       </div>
     </div>
   );
